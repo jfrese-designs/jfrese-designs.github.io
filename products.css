@@ -115,23 +115,43 @@ footer p {
 .card img {
     width: 100%;
 }
-
+.card button {
+  padding: .75rem 3rem;
+  color: #f2f2f2;
+  background-color: #082b59;
+  border-radius: 12px;
+  border: none;
+  font-family: "poppins", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+.card a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.card button:hover {
+  background-color: #f2f2f2;
+  color: #082b59;
+}
 .card h2 {
-    line-height: 1.35;
-    background-color: #d98555;
-    margin: 0;
-    padding: .75rem 1rem 0 1rem;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+  line-height: 1.35;
+  background-color: #d98555;
+  margin: 0;
+  padding: .75rem 1rem 0 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .card p {
-    line-height: 1.65;
-    background-color: #59331d;
-    color: #f2f2f2;
-    margin: 0;
-    padding: .5rem 1rem;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+  line-height: 1.65;
+  background-color: #59331d;
+  color: #f2f2f2;
+  margin: 0;
+  padding: .5rem 1rem;
+}
+p.details-button {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 .roast-styles {
     display: grid;
