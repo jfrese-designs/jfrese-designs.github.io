@@ -4,25 +4,38 @@
     <title>Products - Gulp Roast Coffee</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="products.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a9c07df36c.js" crossorigin="anonymous"></script>
-    <!-- Dark logo: https://assets.codepen.io/6306176/gulp-logo-dark.png
-  Light logo: https://assets.codepen.io/6306176/gulp-logo-light.png -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="flexbox">
-    <div class="desknav">
-        <div class="logo"><a href="gulproast.html"><img class="logo" src="media/images/gulp-logo-light.png" alt="Gulp Roast Coffee" height="125"></a>
+    <nav class="navbar navbar-expand-md navbar-dark px-3" style="background-color: #082b59; color: #f2f2f2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../gulproast.html"><img src="media/images/gulp-logo-light.png" alt="Gulp Roast Coffee" height="75"></a>
+          <button class="navbar-toggler" style="border-color: #f2f2f2; color: #f2f2f2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active fs-4" aria-current="page" href="about_page_RWD_image.html" style="color: #f2f2f2"><span class="fa-solid fa-mug-saucer pe-2"></span> About</a>
+              </li>
+              <li class="nav-item fs-4">
+                <a class="nav-link" href="products.html" style="color: #f2f2f2"><span class="fa-solid fa-fire-flame-curved pe-2"></span> Products</a>
+              </li>
+              <li class="nav-item fs-4">
+                <a class="nav-link" href="contact.html" style="color: #f2f2f2; border-color: ;"><span class="fa-solid fa-phone pe-2"></span> Contact</a>
+              </li>
+            </ul>  
+          </div>
         </div>
-        <nav class="flex-container">
-            <div id="about"><a href="about_page_RWD_image.html"><span class="fa-solid fa-mug-saucer"></span> About</a></div>
-            <div id="products"><a href="products.html"><span class="fa-solid fa-fire-flame-curved"></span> Products</a></div>
-            <div id="contact"><a href="contact.html"><span class="fa-solid fa-phone"></span> Contact</a></div>
-        </nav>
-    </div>
+    </nav>
+    <div style="height: 12px; background-color: #d98555"></div>  
     <div class="roast-styles">
     <h1>Our Products</h1>
         <img src="media/images/gulp-coffee-beans.jpg" alt="three small piles of different coffee beans">
@@ -32,7 +45,7 @@
             <h2>Columbian-Blended Espresso Beans</h2>
             <img src="media/images/gulp-espresso-beans.jpg" alt="coffee beans in a scoop and spilling from a paper bag">
             <p>With our Columbian-Blended Espresso Beans, you can finally feel like a professional barista. Bright and clean with an intense burst of flavor, these full-bodied beans strike a perfect balance between the most delicate roasts and fruitful aromas.</p>
-            <p class="details-button"><a href="Products/Columbian-Blended_Espresso.html"><button>Click For Detials</button></a></p>
+            <p class="details-button"><a href="Products/Columbian-Blended_Espresso-bootstrap.html"><button>Click For Detials</button></a></p>
         </div>
         <div class="card" id="card2">
             <h2>Triple-Blended Coffee Beans</h2>
@@ -53,9 +66,9 @@
     <footer>
         <p class="copyright">&#169; 2022 Trilogy Education Services, a 2U, Inc. All rights reserved.</p>
         <p class="copyright">This site is operated by Trilogy Education Services for <em>educational purposes</em> only. This is not a restaurant website. This is a fictitious company and scenario intended only for internal academic purposes.</p>
-        <p class="social"><a href="facebook_page.html" alt="Facebook"><i class="fa-brands fa-facebook-f"></i></a> <!-- (www.facebook.com) -->
-            <a href="twitter_page.html" alt="Twitter"><i class="fa-brands fa-x-twitter"></i><!-- (www.twitter.com)--></a>
-            <a href="instagram_page.html" alt="Instagram"><i class="fa-brands fa-instagram"></i> <!-- (www.instagram.com)--></a></p>
+        <p class="social"><a href="facebook_page.html" alt="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="twitter_page.html" alt="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="instagram_page.html" alt="Instagram"><i class="fa-brands fa-instagram"></i></a></p>
     </footer>
 </body>
 </html>
