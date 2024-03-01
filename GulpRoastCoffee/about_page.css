@@ -1,0 +1,231 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+body {
+    font-family: "Lato", "georgia", sans-serif;
+    font-size: 100%;
+    background-color: #f2f2f2;
+    line-height: 2;
+    margin: 0;
+  }
+  h1 {
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-top: 0;
+  }
+  .logo {
+    background-color: #082b59;
+    border: 5px solid #082b59;
+    text-align: center;
+    margin: 0;
+  }
+  .logo img:hover {
+    border: 5px solid #d98555;
+    border-radius: 12px;
+  }
+  nav {
+    background-color: #082b59;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    font-size: 1.35rem;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 20px solid #d98555;
+  }
+  .flex-container div {
+    flex-basis: 32%;
+    text-align: center;
+  }
+  #about {
+    text-align: right;
+    padding-right: 5%;
+  }
+  #about a,
+  #locations a,
+  #contact a {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+  }
+  nav span {
+    padding-right: 10px;
+  }
+  #about a:hover,
+  #locations a:hover,
+  #contact a:hover {
+    color: #082b59;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    padding-top: 0.5rem 1rem;
+  }
+  #contact {
+    text-align: left;
+    padding-left: 5%;
+  }
+  .social {
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .social a {
+    color: #ffffff;
+    font-size: 1.75rem;
+    padding: 0.25rem 1rem;
+    margin-right: 1rem;
+  }
+  .social a:last-child {
+    margin-right: 0;
+  }
+  .social a:hover {
+    color: #082b59;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+  }
+  .copyright {
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+    border-top: 20px solid #d98555;
+  }
+  footer {
+    background-color: #082b59;
+    color: #ffffff;
+  }
+  footer p {
+    margin-bottom: 1rem;
+  }
+  button {
+    background-color: #59331d;
+    color: #f2f2f2;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    letter-spacing: 2px;
+  }
+  button:hover {
+    background-color: #d98555;
+    color: #131d26;
+    letter-spacing: 2px;
+  }
+  .container {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .left {
+    padding-left: 15%;
+  }
+  article {
+    margin: 0;
+    font-size: 1.125rem;
+    min-width: 308px;
+  }
+  article p {
+    padding-right: 1rem;
+  }
+  .textlink {
+    color: #59331d;
+  }
+  .textlink:hover {
+    color: #082d59;
+    text-transform: smallcaps;
+  }
+  .picture p {
+    color: #f2f2f2;
+    margin-top: 0;
+    padding-left: 0.5rem;
+  }
+  .margin {
+    background-color: transparent;
+    padding-right: 15%;
+    border-radius: 0;
+  }
+  .picture {
+    background-color: #59331d;
+    border-radius: 12px;
+    max-width: 308px;
+  }
+  img.contain {
+    width: 308px;
+    aspect-ratio: 308/500;
+    height: 500px;
+    border-radius: 12px 12px 0 0;
+  }
+  @media (min-width: 901px) and (max-width: 1100px) {
+    article {
+      height: 525px;
+      line-height: 1.5rem;
+    }
+    .flex-container div {
+      flex-basis: 32%;
+    }
+  }
+  @media (max-width: 900px) {
+    .container {
+      display: block;
+      justify-content: center;
+    }
+    .picture {
+      justify-content: center;
+      margin: 3rem auto 0 auto;
+      padding-bottom: 0.25rem;
+    }
+    .margin {
+      padding: 0;
+    }
+    .left {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    #about,
+    #contact {
+      padding: 0;
+      text-align: center;
+    }
+    #about a,
+    #locations a,
+    #contact a {
+      padding: 0.5rem 0.5rem;
+    }
+    nav span {
+      padding-right: 4px;
+    }
+    nav {
+      padding-left: 3%;
+      padding-right: 3%;
+      font-size: 1.1rem;
+    }
+    .social {
+      padding-bottom: 1.5rem;
+    }
+  }
+  @media (max-width: 410px) {
+    nav {
+      font-size: 1rem;
+    }
+    .social {
+      padding-bottom: 1.5rem;
+    }
+    .left {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    img.contain {
+        width: 100%;
+        height: auto;
+    }
+    article {
+        min-width: none;
+    }
+  }
+  

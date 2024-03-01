@@ -1,0 +1,286 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+  body {
+    font-family: "Lato", "georgia", sans-serif;
+    font-size: 100%;
+    background-color: #ffffff;
+    line-height: 2;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 3%;
+  }
+  .logo {
+    background-color: #082b59;
+    text-align: left;
+    grid-row: 1/span 2;
+  }
+  nav {
+    background-color: #082b59;
+    color: white;
+    padding: 2% 1.5% 0 3%;
+    font-size: 1.35rem;
+  }
+  .flex-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-auto-rows: 2fr;
+    border-bottom: 16px solid #d98555;
+  }
+  #about, #contact, #products {
+    text-align: center;
+    grid-row: 2/span 1;
+  }
+  #about a,
+  #products a,
+  #contact a {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 0.5rem 0.5rem;
+  }
+  nav span {
+    padding-right: 10px;
+  }
+  #about a:hover,
+  #products a:hover,
+  #contact a:hover {
+    color: #082b59;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding-top: 0.5rem 0.5rem;
+  }
+  .social {
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .social a {
+    color: #ffffff;
+    font-size: 1.75rem;
+    padding: 0.25rem 1rem;
+    margin-right: 1rem;
+  }
+  .social a:last-child {
+    margin-right: 0;
+  }
+  .social a:hover {
+    color: #082b59;
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
+  .copyright {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .copyright:first-child {
+    margin-bottom: 0;
+  }
+  footer {
+    background-color: #082b59;
+    color: #ffffff;
+  }
+  footer p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  button {
+    background-color: #59331d;
+    color: #ffffff;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    letter-spacing: 2px;
+  }
+  button:hover {
+    background-color: #d98555;
+    color: #131d26;
+    letter-spacing: 2px;
+  }
+  .container {
+    margin: 0 3% 0 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  article {
+    margin: 0;
+    font-size: 1.25rem;
+    min-width: 308px;
+  }
+  article p {
+    padding-right: 2rem;
+  }
+  .left p:first-child {
+    margin-top: 0;
+  }
+  .textlink {
+    color: #59331d;
+  }
+  .textlink:hover {
+    color: #082d59;
+    text-transform: smallcaps;
+  }
+  picture {
+    border-radius: 12px;
+    /*max-height: fit-content;*/
+  }
+  picture source {
+    line-height: 0%;
+    display: none;
+    height: 0;
+  }
+  img.contain {
+    margin-top: 0;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .brewing-coffee {
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+  .beans {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .beans-loose {
+    min-width: 1200px;
+    align-self: flex-end;
+  }
+  @media (min-width: 1201px) {
+    .beans-loose {
+        width: 100%;
+    }
+  }
+  @media (max-width: 1100px) {
+   .beans {
+    /*display: block;*/
+    width: 100%;
+    min-height: 200px;
+    margin: 0;
+    }
+   .brewing-coffee {
+    grid-column: 2/span 1;
+   }
+   .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 1fr;
+   }
+   .left {
+    grid-column: 1/span 1;
+   }
+  }
+  @media (max-width: 768px) {
+   .container {
+    display: block;
+    justify-content: center;
+   }
+   .brewing-coffee {
+    /*display: flex;
+    align-items: center;*/
+    margin: 3rem 10% 0.25rem 10%;
+    /*width: max-content;
+    height: auto;*/
+   }
+   img.contain {    
+    width: 100%;
+    height: auto;
+   }
+   .left {
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+  }
+  @media (max-width: 700px) {
+    #about,
+    #contact {
+     padding: 0;
+      text-align: center;
+    }
+    #about a,
+    #products a,
+    #contact a {
+      padding: 0.5rem 0.5rem;
+    }
+    nav span {
+      padding-right: 4px;
+    }
+    nav {
+      padding-left: 3%;
+      padding-right: 3%;
+      font-size: 1.1rem;
+    }
+    .social {
+      padding-bottom: 1.5rem;
+    }
+  }
+  @media (max-width: 560px) {
+    .flex-container {
+        display: block;
+        margin: auto;    
+    }
+    #about,
+    #products,
+    #contact {
+      margin: 1rem 0;
+    }
+    .logo {
+        text-align: center;
+    }
+    nav {
+      font-size: 1.5rem;
+    }
+    .social {
+      padding-bottom: 1.5rem;
+    }
+    .container {
+        margin: 0 10%;
+    }
+    h1 {
+        margin: 50px 10%;
+    }
+    .left {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .brewing-coffee {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .beans {
+        margin: 0;
+        border: .5px solid red;
+    }
+    .beans-loose {
+        margin-top: auto;
+        margin-bottom: 0;
+        border: .5px solid red;
+    }
+    img.contain {
+        width: 100%;
+        height: auto;
+    }
+    article {
+        min-width: none;
+    }
+    .copyright {
+        padding: .5rem 5%;
+    }
+  }
+  

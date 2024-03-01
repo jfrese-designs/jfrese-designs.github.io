@@ -1,0 +1,278 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+body {
+  font-family: "Lato", "georgia", sans-serif;
+  font-size: 100%;
+  background-color: #ffffff;
+  line-height: 2;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin-top: 50px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.logo {
+  background-color: #082b59;
+  border: 5px solid #082b59;
+  text-align: center;
+  margin: 0;
+}
+.logo img:hover {
+  border: 5px solid #d98555;
+  border-radius: 12px;
+}
+nav {
+  background-color: #082b59;
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 2%;
+  font-size: 1.35rem;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.desknav {
+  background-color: #082b59;
+  border-bottom: 12px solid #d98555;
+}
+.flex-container div {
+  padding: .5rem 0;
+  text-align: center;
+}
+#about a,
+#products a,
+#contact a {
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+}
+nav span {
+  padding-right: 10px;
+}
+#about a:hover,
+#products a:hover,
+#contact a:hover {
+  color: #082b59;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding-top: 0.5rem 1rem;
+}
+.social {
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+.social a {
+  color: #ffffff;
+  font-size: 1.75rem;
+  padding: 0.25rem 1rem;
+  margin-right: 1rem;
+}
+.social a:last-child {
+  margin-right: 0;
+}
+.social a:hover {
+  color: #082b59;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+.copyright {
+  text-align: center;
+  padding: 0.5rem .75rem; 
+}
+footer {
+  background-color: #082b59;
+  color: #ffffff;
+}
+footer p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+button {
+  background-color: #59331d;
+  color: #ffffff;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  letter-spacing: 2px;
+}
+button:hover {
+  background-color: #d98555;
+  color: #131d26;
+  letter-spacing: 2px;
+}
+.container {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.left {
+  padding: 0 8%;
+}
+article {
+  margin: 0;
+  font-size: 1.125rem;
+}
+article p {
+  padding-right: 1rem;
+}
+.textlink {
+  color: #59331d;
+}
+.textlink:hover {
+  color: #082d59;
+  text-transform: smallcaps;
+}
+.picture p {
+  display: none;
+}
+.picture {
+  padding: 8%;
+  border-radius: 12px;
+}
+picture source {
+  line-height: 0%;
+  display: none;
+}
+img.contain {
+  margin-top: 0;
+  width: 100%;
+  border-radius: 12px;
+}
+.beans {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  overflow: clip;
+  overflow-clip-margin: 0;
+}
+.beans-loose {
+  min-width: 1200px;
+  align-self: flex-end;
+}
+
+@media (min-width: 1200px) {
+  .beans-loose {
+    width: 100%;
+  }
+  .container {
+    line-height: 2;
+  }
+}
+
+@media (min-width: 1100px) {
+  img.contain {
+    margin-top: 0;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  } 
+  .left {
+    grid-column: 1/span 1;
+  }
+  .picture {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    grid-column: 2/span 1;
+    height: auto;
+  }
+  h1 {
+    text-align: left;
+    padding-left: 4%;
+  }
+  .desknav {
+    display: grid;
+    grid-template-columns: 7fr 6fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .logo {
+    text-align: left;
+    padding-left: 7%;
+  }
+  div.logo {
+    grid-row: 1/span 2;
+  }
+  img.logo {  
+    padding-left: 0;
+  }
+  .flex-container {
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    grid-row: 2/span 1;
+    justify-content: space-evenly;
+  }
+}
+  
+  @media (min-width: 700px) and (max-width: 873px) {
+    .container {
+    line-height: 1.5;
+    }
+  }
+
+  @media (min-width: 700px) and (max-width: 1099px) {
+    h1 {
+      text-align: left;
+      padding-left: 4%;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;      
+    }
+    #about,
+    #contact,
+    #products {
+      padding: 0 .5rem;
+      text-align: center;
+    }
+    #about a,
+    #prodcuts a,
+    #contact a {
+      padding: 0.5rem 0.5rem;
+    }
+    nav span {
+      padding-right: 4px;
+    }
+    nav {
+      padding-left: 3%;
+      padding-right: 3%;
+      font-size: 1.1rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+    }
+    .picture {
+      max-height: 600px;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+    img.contain {
+      margin-top: 0;
+      max-width: 308px;
+      aspect-ratio: 308/500;
+      border-radius: 12px;
+    } 
+    .social {
+      padding-bottom: 1.5rem;
+    }
+  }
+  
