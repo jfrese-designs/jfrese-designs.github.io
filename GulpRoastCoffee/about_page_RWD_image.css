@@ -21,12 +21,20 @@ h1 {
 }
 .logo {
   background-color: #082b59;
-  border: 5px solid #082b59;
+  border: 3px solid #082b59;
   text-align: center;
   margin: 0;
 }
+
+#logo:hover {
+  border-color: #d98555;
+}
+.logo img {
+  border: 3px solid #082b59;
+  border-radius: 12px;
+}
 .logo img:hover {
-  border: 5px solid #d98555;
+  border: 3px solid #d98555;
   border-radius: 12px;
 }
 nav {
@@ -99,7 +107,7 @@ footer p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-button {
+.left button {
   background-color: #59331d;
   color: #ffffff;
   border-radius: 12px;
@@ -108,7 +116,7 @@ button {
   padding: 1rem 2rem;
   letter-spacing: 2px;
 }
-button:hover {
+.left button:hover {
   background-color: #d98555;
   color: #131d26;
   letter-spacing: 2px;

@@ -20,12 +20,16 @@ color: #082b59;
 }
 .logo {
 background-color: #082b59;
-border: 5px solid #082b59;
+border: 3px solid #082b59;
 text-align: center;
 margin: 0;
 }
+.logo img {
+  border: 3px solid #082b59;
+  border-radius: 12px;
+}
 .logo img:hover {
-border: 5px solid #d98555;
+border: 3px solid #d98555;
 border-radius: 12px;
 }
 nav {
