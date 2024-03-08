@@ -18,8 +18,8 @@ h3 {
   font-weight: 600;
 }
 .designs-by { 
-  background-color: #9f3f33;
-  color: #ffffee;
+  background-color: #ffffee;
+  color: #000000;
 }
 .case-studies {
   display: grid;
@@ -111,7 +111,7 @@ h3 {
 }
 .block1 a {
   text-decoration: none;
-  color: #ffffed;
+  color: #000000;
 }
 .focus {
   display: flex; 
@@ -120,7 +120,8 @@ h3 {
   padding-bottom: 100px;
 }
 .focus article {
-  padding: 0 10% 0 15%;
+  padding: 0 10% 0 10%;
+  flex-basis: 50%;
 }
 .focus button {
   visibility: hidden;
@@ -129,10 +130,15 @@ h3 {
   margin-top: 0;
 }
 .focus aside {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
   text-align: left;
-  padding-right: 15%;
+  padding-right: 10%;
 }
 .focus aside img {
+    display: flex;
   object-fit: contain;
   width: 100%;
   justify-content: center;
@@ -144,24 +150,6 @@ button {
   border-radius: 15px;
   background-color: #ffffed;
   color: #9f3f33;
-}
-@media (max-width:990px) {
-  .first {
-    grid-column: 1/span 2;
-    grid-row: 2/3;
-  }
-  .second {
-    grid-row: 2/3;
-    grid-column: 3/span 2;
-  }
-  .third {
-    grid-row: 3/4;
-    grid-column: 1/span 2;
-  } 
-  .fourth {
-    grid-row: 3/4;
-    grid-column: 3/span 2;
-  }
 }
 @media (max-width:700px) {
   .block1 {
@@ -186,6 +174,9 @@ button {
   .focus aside {
     padding-left: 8%;
     padding-right: 8%;
+  }
+  .focus aside img {
+    padding: 50px 0 50px 0;
   }
   .case-studies {
     grid-template-columns: auto;
