@@ -113,6 +113,9 @@ h3 {
   text-decoration: none;
   color: #000000;
 }
+#resume {
+  display: none;
+}
 .focus {
   display: flex; 
   flex-direction: row;
